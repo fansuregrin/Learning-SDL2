@@ -1,3 +1,6 @@
+#ifndef DMEO10_TEXTURE_H
+#define DEMO10_TEXTURE_H
+
 #include <string>
 extern "C" {
 #include <SDL2/SDL.h>
@@ -21,3 +24,5 @@ private:
     int mWidth;
     int mHeight;
 };
+
+#endif // end of DEMO10_TEXTURE_H
