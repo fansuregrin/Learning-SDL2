@@ -12,3 +12,7 @@
 - [The Viewport](./src/demo9/): Control your SDL rendering area with the viewport.
 - [Color Keying](./src/demo10/): Render images with transparent backgrounds using color keying.
 - [Clip Rendering and Sprite Sheets](./src/demo11/): Render parts of textures to use sprite sheets.
+
+## Acknowledgements
+- [Beginning Game Programming v2.0](https://lazyfoo.net/tutorials/SDL/index.php)
+- [MSYS2](https://www.msys2.org/)
