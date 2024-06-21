@@ -1,1 +1,1 @@
-# Learing SDL2
+# Learning SDL2
