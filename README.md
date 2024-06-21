@@ -13,6 +13,20 @@
 - [Color Keying](./src/demo10/): Render images with transparent backgrounds using color keying.
 - [Clip Rendering and Sprite Sheets](./src/demo11/): Render parts of textures to use sprite sheets.
 
+## Build and Run
+### Opt1: Setup on Windows
+- Step1: Install [MSYS2](https://www.msys2.org/)
+From winget:
+```powershell
+winget install MSYS2.MSYS2 -s winget
+```
+or from official website: [https://www.msys2.org/](https://www.msys2.org/).
+- Step2: Config Environment Variable for msys2
+- Step3: Install c/c++ compile and debug toolchains
+- Step4: Install SDL2 devlopment library
+- Step5: Config Environment for mingw-w64 and SDL2
+### Opt2: Setup on Linux
+
 ## Acknowledgements
 - [Beginning Game Programming v2.0](https://lazyfoo.net/tutorials/SDL/index.php)
 - [MSYS2](https://www.msys2.org/)
