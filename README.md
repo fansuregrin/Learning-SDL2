@@ -16,7 +16,8 @@
 - [Alpha Blending](./src/demo13/): Render transparent textures with SDL2.
 
 ## Build and Run
-### Opt1: Setup on Windows
+### Preparation
+#### Opt1: Setup on Windows
 - Step1: Install [MSYS2](https://www.msys2.org/)
     From winget:
     ```powershell
@@ -48,7 +49,10 @@
 - Step5: Config Environment Variable for mingw-w64 and SDL2
     
     Add `C:\msys64\mingw64\bin` to `PATH` environment variable.
-### Opt2: Setup on Linux
+#### Opt2: Setup on Linux
+
+### Build
+Just go to root directory of this project and run `make` to build all demos.
 
 ## Acknowledgements
 - [Beginning Game Programming v2.0](https://lazyfoo.net/tutorials/SDL/index.php)
