@@ -12,6 +12,7 @@
 - [The Viewport](./src/demo9/): Control your SDL rendering area with the viewport.
 - [Color Keying](./src/demo10/): Render images with transparent backgrounds using color keying.
 - [Clip Rendering and Sprite Sheets](./src/demo11/): Render parts of textures to use sprite sheets.
+- [Color Modulation](./src/demo12/): Change your texture's color using color modulation.
 
 ## Build and Run
 ### Opt1: Setup on Windows
