@@ -16,15 +16,34 @@
 ## Build and Run
 ### Opt1: Setup on Windows
 - Step1: Install [MSYS2](https://www.msys2.org/)
-From winget:
-```powershell
-winget install MSYS2.MSYS2 -s winget
-```
-or from official website: [https://www.msys2.org/](https://www.msys2.org/).
+    From winget:
+    ```powershell
+    winget install MSYS2.MSYS2 -s winget
+    ```
+    or from official website: [https://www.msys2.org/](https://www.msys2.org/).
 - Step2: Config Environment Variable for msys2
+    Add `C:\msys64\usr\bin` to `PATH` environment variable.
+    ```powershell
+    $addPath='C:\msys64\usr\bin;';
+    $target='User';
+    $path = [Environment]::GetEnvironmentVariable('Path', $target);
+    if($path -match ";$"){
+        $newPath = $path + $addPath;
+    } else { 
+        $newPath = $path + ';' + $addPath;
+    }
+    [Environment]::SetEnvironmentVariable('Path', $newPath, $target)
+    ```
 - Step3: Install c/c++ compile and debug toolchains
+    ```powershell
+    pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb make
+    ```
 - Step4: Install SDL2 devlopment library
-- Step5: Config Environment for mingw-w64 and SDL2
+    ```powershell
+    pacman -S mingw-w64-x86_64-SDL2
+    ```
+- Step5: Config Environment Variable for mingw-w64 and SDL2
+    Add `C:\msys64\mingw64\bin` to `PATH` environment variable.
 ### Opt2: Setup on Linux
 
 ## Acknowledgements
