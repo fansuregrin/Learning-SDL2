@@ -22,6 +22,7 @@
     ```
     or from official website: [https://www.msys2.org/](https://www.msys2.org/).
 - Step2: Config Environment Variable for msys2
+    
     Add `C:\msys64\usr\bin` to `PATH` environment variable.
     ```powershell
     $addPath='C:\msys64\usr\bin;';
@@ -43,6 +44,7 @@
     pacman -S mingw-w64-x86_64-SDL2
     ```
 - Step5: Config Environment Variable for mingw-w64 and SDL2
+    
     Add `C:\msys64\mingw64\bin` to `PATH` environment variable.
 ### Opt2: Setup on Linux
 
