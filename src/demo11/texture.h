@@ -9,6 +9,7 @@ extern "C" {
 
 extern SDL_Renderer* gRenderer;
 
+namespace demo11 {
 class Texture {
 public:
     Texture();
@@ -24,5 +25,6 @@ private:
     int mWidth;
     int mHeight;
 };
+}
 
 #endif // end of DEMO10_TEXTURE_H

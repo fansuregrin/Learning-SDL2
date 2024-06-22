@@ -1,6 +1,7 @@
 #include "texture.h"
 
 
+namespace demo11 {
 Texture::Texture(): mTexture(nullptr), mWidth(0), mHeight(0) {}
 
 Texture::~Texture() { free(); }
@@ -60,3 +61,5 @@ void Texture::render(SDL_Renderer *renderer, int x, int y, SDL_Rect *clip) {
 int Texture::getWidth() { return mWidth; }
 
 int Texture::getHeight() { return mHeight; }
+
+}

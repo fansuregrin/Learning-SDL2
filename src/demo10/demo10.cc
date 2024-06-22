@@ -13,8 +13,8 @@ const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 SDL_Window * gWindow = nullptr;
 SDL_Renderer * gRenderer = nullptr;
-Texture gFooTexture;
-Texture gBackgroundTexture;
+demo10::Texture gFooTexture;
+demo10::Texture gBackgroundTexture;
 
 int main(int argc, char * argv[]) {
     if (!init()) {
@@ -59,7 +59,7 @@ bool init() {
         return false;
     }
 
-    gWindow = SDL_CreateWindow("SDL Demo9", SDL_WINDOWPOS_UNDEFINED,
+    gWindow = SDL_CreateWindow("SDL Demo10", SDL_WINDOWPOS_UNDEFINED,
         SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT,
         SDL_WINDOW_SHOWN);
     if (gWindow == nullptr) {

@@ -13,7 +13,7 @@ const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 SDL_Window * gWindow = nullptr;
 SDL_Renderer * gRenderer = nullptr;
-Texture gSpriteSheet;
+demo11::Texture gSpriteSheet;
 
 enum {
     LOC_TOP_LEFT,
@@ -70,7 +70,7 @@ bool init() {
         return false;
     }
 
-    gWindow = SDL_CreateWindow("SDL Demo9", SDL_WINDOWPOS_UNDEFINED,
+    gWindow = SDL_CreateWindow("SDL Demo11", SDL_WINDOWPOS_UNDEFINED,
         SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT,
         SDL_WINDOW_SHOWN);
     if (gWindow == nullptr) {
