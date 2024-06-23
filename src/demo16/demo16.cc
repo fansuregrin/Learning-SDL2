@@ -116,7 +116,7 @@ bool loadMedia() {
 
     SDL_Color color = {0, 0, 0};
     if (!gTextTexture.loadFromRenderedText(gRenderer, gFont,
-    "The quick brown fox jumps over the lazy dog", color)) {
+    "The quick brown fox jumps over the lazy dog\n你好，世界！", color)) {
         return false;
     }
 
