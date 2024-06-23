@@ -14,6 +14,7 @@
 - [Clip Rendering and Sprite Sheets](./src/demo11/): Render parts of textures to use sprite sheets.
 - [Color Modulation](./src/demo12/): Change your texture's color using color modulation.
 - [Alpha Blending](./src/demo13/): Render transparent textures with SDL2.
+- [Animated Sprites and VSync](./src/demo14/): Render animations in sync with the monitor refresh rate with SDL2.
 
 ## Build and Run
 ### Preparation
