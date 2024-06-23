@@ -148,6 +148,7 @@ bool loadMedia() {
 
 void close() {
     gModulatedTexture.free();
+    gBackgroundTexture.free();
 
     if (gRenderer) {
         SDL_DestroyRenderer(gRenderer);
