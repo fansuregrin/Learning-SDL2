@@ -10,7 +10,7 @@ bool Texture::loadFromFile(SDL_Renderer *renderer, const std::string &path) {
     SDL_Surface * loadedSurface = IMG_Load(path.c_str());
     if (loadedSurface == nullptr) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-            "Failed to load %s. SDL_Error: %s.", path.c_str(), SDL_GetError());
+            "Failed to load %s. SDL_image Error: %s.", path.c_str(), IMG_GetError());
         return false;
     }
 

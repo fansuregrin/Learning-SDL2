@@ -69,7 +69,7 @@ bool init() {
 
     if (!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG)) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-            "Failed to initialized SDL_image. SDL_Error: %s.", IMG_GetError());
+            "Failed to initialized SDL_image. SDL_image Error: %s.", IMG_GetError());
         return false;
     }
 
@@ -89,8 +89,9 @@ bool loadMedia() {
 SDL_Surface* loadSurface(const std::string &path) {
     SDL_Surface* loadedSurface = IMG_Load(path.c_str());
     if (loadedSurface == nullptr) {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Cannot load image %s! SDL_Error: %s.",
-            path.c_str(), SDL_GetError());
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
+            "Cannot load image %s! SDL_image Error: %s.",
+            path.c_str(), IMG_GetError());
         return nullptr;
     }
     

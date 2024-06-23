@@ -78,7 +78,7 @@ bool init() {
     SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
     if (!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG)) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-            "Failed to initialized SDL_image. SDL_Error: %s.", SDL_GetError());
+            "Failed to initialized SDL_image. SDL_Error: %s.", IMG_GetError());
         return false;
     }
 

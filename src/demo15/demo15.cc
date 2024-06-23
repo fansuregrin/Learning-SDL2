@@ -18,7 +18,7 @@ demo15::Texture gArrowTexture;
 
 
 int main(int argc, char * argv[]) {
-    if (!init("SDL Demo12")) {
+    if (!init("SDL Demo15")) {
         close();
         return 1;
     }
@@ -83,7 +83,7 @@ bool init(const std::string &title) {
     SDL_LogSetAllPriority(SDL_LOG_PRIORITY_DEBUG);
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, 
-            "Failed to initialize SDL. SDL_Error: %s.", SDL_GetError());
+            "Failed to initialize SDL. SDL Error: %s.", SDL_GetError());
         return false;
     }
 
@@ -92,7 +92,7 @@ bool init(const std::string &title) {
         SDL_WINDOW_SHOWN);
     if (gWindow == nullptr) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-            "Failed to create window. SDL_Error: %s.", SDL_GetError());
+            "Failed to create window. SDL Error: %s.", SDL_GetError());
         return false;
     }
 
@@ -101,14 +101,14 @@ bool init(const std::string &title) {
         SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     if (gRenderer == nullptr) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-            "Failed to create renderer. SDL_Error: %s.", SDL_GetError());
+            "Failed to create renderer. SDL Error: %s.", SDL_GetError());
         return false;
     }
 
     SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
     if (!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG)) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-            "Failed to initialized SDL_image. SDL_Error: %s.", SDL_GetError());
+            "Failed to initialized SDL_image. SDL_image Error: %s.", IMG_GetError());
         return false;
     }
 

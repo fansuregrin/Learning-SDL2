@@ -17,7 +17,7 @@ demo13::Texture gModulatedTexture;
 demo13::Texture gBackgroundTexture;
 
 int main(int argc, char * argv[]) {
-    if (!init("SDL Demo12")) {
+    if (!init("SDL Demo13")) {
         close();
         return 1;
     }
@@ -127,7 +127,7 @@ bool init(const std::string &title) {
     SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
     if (!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG)) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-            "Failed to initialized SDL_image. SDL_Error: %s.", SDL_GetError());
+            "Failed to initialized SDL_image. SDL_image Error: %s.", IMG_GetError());
         return false;
     }
 
