@@ -15,6 +15,7 @@
 - [Color Modulation](./src/demo12/): Change your texture's color using color modulation.
 - [Alpha Blending](./src/demo13/): Render transparent textures with SDL2.
 - [Animated Sprites and VSync](./src/demo14/): Render animations in sync with the monitor refresh rate with SDL2.
+- [Rotation and Flipping](./src/demo15/): Rotate and flip your textures in SDL2.
 
 ## Build and Run
 ### Preparation
