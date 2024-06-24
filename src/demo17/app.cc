@@ -2,7 +2,7 @@
 
 namespace demo17 {
 
-App::App(): mScreenWidth(640), mScreenHeight(480), mButtonNum(4),
+App::App(): closed(false), mScreenWidth(640), mScreenHeight(480), mButtonNum(4),
 mWindow(nullptr), mRenderer(nullptr), mFont(nullptr) {
     if (!init()) { close(); }
 
@@ -38,6 +38,8 @@ void App::close() {
     TTF_Quit();
     IMG_Quit();
     SDL_Quit();
+
+    closed = true;
 }
 
 bool App::init() {
@@ -104,12 +106,12 @@ bool App::loadMedia() {
 }
 
 void App::start() {
+    if (closed) return;
     SDL_Event e;
-    bool quit = false;
-    while (quit == false) {
+    while (closed == false) {
         while (SDL_PollEvent(&e)) {
             if (e.type == SDL_QUIT) {
-                quit = true;
+                closed = true;
             }
 
             for (auto &button : mButtons) {

@@ -24,6 +24,7 @@ private:
     void close();
 
     std::string mTitle;
+    bool closed;
     int mScreenWidth;
     int mScreenHeight;
     int mButtonNum;
