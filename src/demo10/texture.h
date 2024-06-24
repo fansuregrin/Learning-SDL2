@@ -9,7 +9,7 @@ extern "C" {
 
 extern SDL_Renderer* gRenderer;
 
-namespace  {
+namespace demo10 {
 
 class Texture {
 public:
