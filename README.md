@@ -17,6 +17,7 @@
 - [Animated Sprites and VSync](./src/demo14/): Render animations in sync with the monitor refresh rate with SDL2.
 - [Rotation and Flipping](./src/demo15/): Rotate and flip your textures in SDL2.
 - [True Type Fonts](./src/demo16/): Render text with TTF fonts in SDL2.
+- [Mouse Events](./src/demo17/): Handle mouse input with SDL2.
 
 ## Build and Run
 ### Preparation
