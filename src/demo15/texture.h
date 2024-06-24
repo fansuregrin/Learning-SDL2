@@ -1,5 +1,5 @@
-#ifndef DMEO10_TEXTURE_H
-#define DEMO10_TEXTURE_H
+#ifndef _TEXTURE_H
+#define _TEXTURE_H
 
 #include <string>
 extern "C" {
@@ -32,4 +32,4 @@ private:
 
 }
 
-#endif // end of DEMO10_TEXTURE_H
+#endif // end of _TEXTURE_H
