@@ -1,5 +1,6 @@
 SRC_ROOT = src
-SUB_DIRS = demo1 demo2 demo3 demo4 demo5 demo6 demo7 demo8 demo9 demo10
+SUB_DIRS = demo1 demo2 demo3 demo4 demo5 demo6 demo7 demo8 demo9 demo10 \
+	demo11 demo12 demo13 demo14 demo15 demo16 demo17
 
 all:
 	for i in ${SUB_DIRS}; do \
