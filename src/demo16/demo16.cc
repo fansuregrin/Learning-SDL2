@@ -19,7 +19,7 @@ demo16::Texture gTextTexture;
 
 
 int main(int argc, char * argv[]) {
-    if (!init("SDL Demo12")) {
+    if (!init("SDL Demo16")) {
         close();
         return 1;
     }
