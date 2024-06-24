@@ -7,6 +7,7 @@ Texture::Texture(): mTexture(nullptr), mWidth(0), mHeight(0) {}
 Texture::~Texture() { free(); }
 
 bool Texture::loadFromFile(SDL_Renderer *renderer, const std::string &path) {
+    free();
     // load an image into a surface
     SDL_Surface * loadedSurface = IMG_Load(path.c_str());
     if (loadedSurface == nullptr) {
