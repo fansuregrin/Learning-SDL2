@@ -3,11 +3,6 @@
 
 #include <vector>
 #include <string>
-extern "C" {
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL_ttf.h>
-}
 #include "texture.h"
 #include "button.h"
 

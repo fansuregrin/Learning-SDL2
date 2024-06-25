@@ -1,7 +1,6 @@
 #ifndef _BUTTON_H
 #define _BUTTON_H
 
-#include <SDL2/SDL.h>
 #include "texture.h"
 
 namespace demo17 {
