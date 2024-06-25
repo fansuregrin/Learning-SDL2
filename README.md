@@ -18,6 +18,7 @@
 - [Rotation and Flipping](./src/demo15/): Rotate and flip your textures in SDL2.
 - [True Type Fonts](./src/demo16/): Render text with TTF fonts in SDL2.
 - [Mouse Events](./src/demo17/): Handle mouse input with SDL2.
+- [Key States](./src/demo18/): Query current key state with SDL2.
 
 ## Build and Run
 ### Preparation
